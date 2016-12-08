@@ -41,6 +41,11 @@ wsk rule create \
     handler
 ```
 
+At this point you can check the activation log to see if indeed the action is invoked by our trigger:
+```bash
+wsk activation poll
+```
+
 ## Convenience script: `deploy.sh`
 OpenWhisk developers will often automate the creation of actions, triggers, and rules as they iterate on their application. The convention that has arisen in many sample apps is to use a `deploy.sh` script, often in conjunction with a `local.env` file to externalize environment variables.
 

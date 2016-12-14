@@ -2,7 +2,7 @@
 Simple demo showing OpenWhisk actions, triggers, and rules.
 
 ## Action: `handler.js`
-This simple JavaScript function (called an _action_ in OpenWhisk parlance) accepts a `params` argument and logs information that can be retrieved from OpenWhisk logs and/or the IBM Bluemix monitoring console. It also returns a JSON object with the current date.
+This simple JavaScript function (called an _action_ in OpenWhisk parlance) accepts a `params` argument and writes information that can be retrieved from OpenWhisk logs and/or the IBM Bluemix monitoring console. It also returns a JSON object with the current date.
 
 This action can be uploaded to OpenWhisk using the following command:
 ```bash
@@ -31,7 +31,7 @@ wsk trigger create every-20-seconds \
 ```
 
 ## Rule: `invoke-periodically`
-This rule shows how the `every-20-seconds` trigger can be declaratively mapped to the `handler.js` action. Notice that it's named somewhat abstractly so that if we wanted to use a different trigger, perhaps something that fires every minute instead, we could still keep the logical name. 
+This rule shows how the `every-20-seconds` trigger can be declaratively mapped to the `handler.js` action. Notice that it's named somewhat abstractly so that if we wanted to use a different trigger, perhaps something that fires every minute instead, we could still keep the logical name.
 
 The rule can be created with the following command:
 ```bash

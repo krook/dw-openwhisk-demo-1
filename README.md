@@ -1,6 +1,8 @@
 # dw-openwhisk-demo-1
 Simple demo showing OpenWhisk actions, triggers, and rules.
 
+![High level diagram](demo-1.png)
+
 ## Action: `handler.js`
 This simple JavaScript function (called an _action_ in OpenWhisk parlance) accepts a `params` argument and writes information that can be retrieved from OpenWhisk logs and/or the IBM Bluemix monitoring console. It also returns a JSON object with the current date.
 

@@ -57,6 +57,6 @@ The script can be used to set up, tear down, and see the current configuration:
 ```
 
 ### Install the `wsk` CLI from Bluemix
-After registering for Bluemix, navigate to the "OpenWhisk" section. You'll find it in the left navigation, under the three horizontal bar (hamburger icon).
+After registering for [Bluemix](http://bluemix.net/), navigate to the "[OpenWhisk](https://console.ng.bluemix.net/openwhisk/)" section. You'll find it in the left navigation, under the three horizontal bar (hamburger icon).
 
 Click the "Download OpenWhisk CLI" button and place the `wsk` binary in your path, such as in `~/bin`. Open a terminal and set your namespace and authorization as shown in step 2. Then create your first action in step 3.

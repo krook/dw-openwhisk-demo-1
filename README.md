@@ -46,7 +46,7 @@ At this point you can check the activation log to see if indeed the action is in
 wsk activation poll
 ```
 
-## Convenience script: `deploy.sh`
+## Installation instructions
 OpenWhisk developers will often automate the creation of actions, triggers, and rules as they iterate on their application. The convention that has arisen in many sample apps is to use a `deploy.sh` script, often in conjunction with a `local.env` file to externalize environment variables.
 
 The script can be used to set up, tear down, and see the current configuration:
@@ -55,3 +55,8 @@ The script can be used to set up, tear down, and see the current configuration:
 ./deploy.sh --uninstall
 ./deploy.sh --env # Not used in this demo
 ```
+
+### Install the `wsk` CLI from Bluemix
+After registering for Bluemix, navigate to the "OpenWhisk" section. You'll find it in the left navigation, under the three horizontal bar (hamburger icon).
+
+Click the "Download OpenWhisk CLI" button and place the `wsk` binary in your path, such as in `~/bin`. Open a terminal and set your namespace and authorization as shown in step 2. Then create your first action in step 3.
